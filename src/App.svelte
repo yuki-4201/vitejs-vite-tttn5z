@@ -1,3 +1,7 @@
+<script>
+    import Board from'./Board.svelte';
+</script>
+
 <div class="bg-gradient-to-br from-yellow-100 to-orange-300 h-svh w-svw justify-center">
     <div class="h-svh max-w-xl flex flex-col gap-4 justify-center mx-auto">
         <!--レベル表示-->
@@ -13,7 +17,9 @@
         </div>
         
         <!--盤面-->
-        <div class="bg-gray-300 aspect-square mx-4 border-4 rounded-2xl border-orange-50"></div>
+        <div class="bg-gray-300 aspect-square mx-4 border-4 rounded-2xl border-orange-50">
+            <Board/>
+        </div>
 
         <!--残り時間-->
         <div class="bg-gray-400 border-4 rounded-xl h-8 overflow-hidden flex">
